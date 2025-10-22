@@ -164,9 +164,10 @@ _FILE-symbols.csv
 _/FILE-symbols.csv
 _FILE-modbusioconf.csv
 #VER=1.0
-1,3,2,1,0,0
-1,3,4,1,0,1
-1,5,264,1,0,2
+1,3,122,1,0,0
+1,3,123,1,0,1
+1,3,137,1,0,2
+1,5,0,1,0,3
 _/FILE-modbusioconf.csv
 _FILE-ioconf.csv
 #VER=1.0
@@ -196,7 +197,7 @@ _FILE-rung_0.csv
 #VER=2.0
 #LABEL=
 #COMMENT=
-#PREVRUNG=0
+#PREVRUNG=-1
 #NEXTRUNG=1
 2-0-70/0 , 9-0-0/0 , 9-0-0/0 , 9-0-0/0 , 9-0-0/0 , 9-0-0/0 , 9-0-0/0 , 9-0-0/0 , 9-0-0/0 , 50-0-0/0
 1-0-50/0 , 1-0-50/1 , 2-0-60/2 , 9-0-0/0 , 9-0-0/0 , 9-0-0/0 , 9-0-0/0 , 9-0-0/0 , 9-0-0/0 , 50-0-60/1
@@ -208,10 +209,10 @@ _/FILE-rung_0.csv
 _FILE-arithmetic_expressions.csv
 #VER=2.0
 0000,@200/0@=1
-0001,@200/0@=2
-0002,@200/0@=4
-0003,@200/1@=(@300/1@-0)*(5000-0)/(3000-0)+0
-0004,@310/2@=@200/2@
+0001,@200/1@=1
+0002,@200/0@=0
+0003,@200/2@=(@300/1@-0)*(5000-0)/(3000-0)+0
+0004,@310/2@=@200/3@
 _/FILE-arithmetic_expressions.csv
 _FILE-timers_iec.csv
 1,0,0
@@ -262,11 +263,11 @@ _FILE-timers.csv
 1,0
 _/FILE-timers.csv
 _FILE-com_params.txt
-MODBUS_MASTER_SERIAL_PORT=/dev/ttyUSB1
+MODBUS_MASTER_SERIAL_PORT=/dev/ttyUSB0
 MODBUS_MASTER_SERIAL_SPEED=38400
 MODBUS_MASTER_SERIAL_DATABITS=8
 MODBUS_MASTER_SERIAL_STOPBITS=1
-MODBUS_MASTER_SERIAL_PARITY=0
+MODBUS_MASTER_SERIAL_PARITY=2
 MODBUS_ELEMENT_OFFSET=0
 MODBUS_MASTER_SERIAL_USE_RTS_TO_SEND=1
 MODBUS_MASTER_TIME_INTER_FRAME=100
